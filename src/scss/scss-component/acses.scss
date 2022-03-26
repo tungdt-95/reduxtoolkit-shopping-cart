@@ -1,0 +1,52 @@
+.product_title
+{
+    text-align: center;
+    margin-top: 40px;
+}
+.item_title,.product_price
+{
+    text-align: center;
+}
+.item_title,.product_price
+{
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.item_title
+{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.product_price
+{
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn_item
+{
+    padding: 5px 10px; 
+    margin-bottom: 10px;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    border: 1px solid black;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.btn_center
+{
+    text-align: center;
+}
+.accesoies_item
+{
+    width: 100%;
+    height: 350px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.accesories_list
+{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}

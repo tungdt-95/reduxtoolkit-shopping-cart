@@ -1,0 +1,19 @@
+$pink: #e91e63;
+$green:rgb(18, 120, 74);
+$secondary-background-color: #f1f1f1;
+$bg-footer: #24262b;
+
+@import "./base.scss";
+@import "./grid.scss";
+@import "./scss-component/policy.scss";
+@import "./scss-component/imgslider.scss";
+@import "./scss-component/footer.scss";
+@import "./scss-component/contact.scss";
+@import "./scss-component/acses.scss";
+@import "./scss-component/product.scss";
+@import "./scss-component/cart.scss";
+@import "./scss-component/details.scss";
+
+
+@import "./scss-component/header.scss";
+

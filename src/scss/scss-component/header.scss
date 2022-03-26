@@ -1,0 +1,94 @@
+$pink: #e91e63;
+$green:rgb(18, 120, 74);
+$secondary-background-color: #f1f1f1;
+.header
+{
+    width: 100%;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: $secondary-background-color;
+
+    &_leng
+    {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        z-index: 99;
+        position: absolute;
+        top: 1px;
+        right: 240px;
+        font-weight: 500;
+        background-color:$pink;
+        border-radius: 50%;
+        padding: 1px 6px;
+        color: #f1f1f1;
+    }
+
+    &_logo
+    {
+        font-size: 25px;
+        text-align: center;
+    }
+    &_icons
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+.icon_cart
+{
+    position: relative;
+}
+.menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+
+    &_link
+    {
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+
+
+        &:hover
+        {
+            color: $pink;
+        }
+        &::after
+        {
+            display: block;
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $pink;
+            transition: width 1s;
+        }
+        &:hover::after
+        {
+            width: 100%;
+            transition: 0.3s ease-in-out;
+        }
+    } 
+}
+.menu_moblie,.menu_close
+{
+    display: none;
+}
+@media only screen and (max-width: 667px)
+{
+    
+  .header
+  {
+      display: flex;
+      flex-direction: column;
+  }
+}

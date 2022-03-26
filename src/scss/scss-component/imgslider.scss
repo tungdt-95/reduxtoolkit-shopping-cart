@@ -1,0 +1,46 @@
+.slider
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    &_one, &_two
+    {
+        & img
+        {
+            border-radius: 4px;
+            height: 500px;
+            width: 100%;
+        }
+    }
+
+}
+
+.stick-list
+{
+    overflow: visible;
+}
+.slick-slider .slick-prev,.slick-slider .slick-next
+{
+    z-index: 1; 
+}
+.slick-slider .slick-prev
+{
+    padding-left: 30px;
+}
+.slick-slider .slick-next
+{
+    padding-right: 60px ;
+}
+.slick-slider .slick-prev::before,.slick-slider .slick-next::before
+{
+    font-size: 30px;
+}
+
+.slick-slider .slick-dots li button:before
+{
+    font-size: 12px;
+}
+button.slick-arrow.slick-prev::before,button.slick-arrow.slick-next::before
+{
+    color: black;
+}

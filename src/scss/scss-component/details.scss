@@ -1,0 +1,113 @@
+.details
+{
+    
+    display: flex;
+    
+    &_img
+    {
+        border-radius: 10px;
+        width: 100%;
+
+        height: 435px;
+        padding: 15px;
+    }
+    &_list
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+    &_title
+    {
+        letter-spacing: 1px;
+        font-size: 16px;
+
+        padding-top: 30px;
+        padding-bottom: 10px;
+
+        color: cadetblue;
+    }
+
+    &_price
+    {
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+
+    &_btn
+    {
+        border: 1px solid black;
+
+        color: #fff;
+        background-color: black;
+
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        margin-right: 15px;
+
+            &:hover
+            {
+                cursor: pointer;
+
+                background-color: #fff;
+                color: black;
+
+                transition: .5s ease-in-out;
+            }
+    }
+    &_color
+    {
+        padding-bottom: 10px;
+        
+        &button
+        {
+            border-radius: 50%;
+            border: none;
+        }
+    }
+
+    &_size
+    {
+        &button
+        {
+            margin-top: 20px;
+            background-color: black;
+            color: #fff;
+        }
+    }
+
+    &_des
+    {
+        font-size: 14px;
+        text-align: justify;
+        margin-right: 5px;
+        padding: 15px 0;
+        line-height: 1.5rem;
+    }
+    
+}
+.center
+{
+    text-align: center;
+   
+}
+.details_color button,.details_size button
+{
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+.footer
+{
+    background-color:$bg-footer;
+    padding-bottom: 30px;
+
+    &_title
+    {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        position: relative;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        color: #fff;
+    }
+    &_title::before
+    {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 50px;
+        left: 0;
+        bottom: -10px;
+        background-color: $pink;
+    }
+    ul li:not(:last-child)
+    {
+        margin-bottom: 10px;
+    }
+    ul li a
+    {
+        font-size: 16px;
+        text-transform:initial;
+        font-weight: 300;
+        color: #bbbbbb;
+        transition: 0.3s ease-in-out;
+    }
+    ul li a:hover
+    {
+        color: #ffffff;
+        padding-left: 8px;
+    }
+}
