@@ -1,37 +1,42 @@
-import React,{useState} from 'react';
-import { FaShoppingCart, FaSearch, FaUserGraduate} from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaShoppingCart, FaSearch, FaUserGraduate } from 'react-icons/fa';
 import { BiMenuAltRight } from "react-icons/bi";
-import {GrClose} from "react-icons/gr";
+import { GrClose } from "react-icons/gr";
 import { Link } from 'react-router-dom';
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
 const Header = () => {
     const quantity = useSelector(state => state.cart.totalQuan)
+    const [menu, setmenu] = useState(false);
     return (
         <header className='header'>
             <div className='grid'>
                 <div className='row'>
                     <div className='col l-4'>
-                        {/* <div className='menu_moblie'>
-                            <BiMenuAltRight onClick={() => setshowmenu(!showmenu)} style={{fontSize:30}}/>
-                        </div> */}
-                        <ul className="menu">
-                            <li className='menu_item'>
-                                <Link className='menu_link' to="./">Trang Chủ</Link>
-                            </li>
-                            <li className='menu_item'>
-                                <Link className='menu_link' to="/product">Sản Phẩm</Link>
-                            </li>
-                            <li className='menu_item'>
-                                <Link className='menu_link' to="/acses">Phụ kiện</Link>
-                            </li>
-                            <li className='menu_item'>
-                                <Link className='menu_link' to="/contact">Liên hệ</Link>
-                            </li>
-                        </ul>
-                        <div className='menu_close'>
-                           <GrClose/>
+                        <div className='menu_moblie'>
+                            <BiMenuAltRight onClick={() => setmenu(!menu)} style={{ fontSize: 30 }} />
                         </div>
+                        <nav className={menu ? "active" : ""}>
+                            <div className='menu_close'>
+                                <GrClose onClick={() => setmenu(!menu)}  />
+                            </div>
+                            <ul>
+                                <li className='menu_item'>
+                                    <Link className='menu_link' to="./">Trang Chủ</Link>
+                                </li>
+                                <li className='menu_item'>
+                                    <Link className='menu_link' to="/product">Sản Phẩm</Link>
+                                </li>
+                                <li className='menu_item'>
+                                    <Link className='menu_link' to="/acses">Phụ kiện</Link>
+                                </li>
+                                <li className='menu_item'>
+                                    <Link className='menu_link' to="/contact">Liên hệ</Link>
+                                </li>
+                            </ul>
+                        </nav>
+
+
                     </div>
                     <div className='col l-4'>
                         <Link to='./'><h1 className='header_logo'>MrsimpleShop</h1></Link>

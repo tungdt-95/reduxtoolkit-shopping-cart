@@ -70,7 +70,7 @@ const CartItems = (props) => {
     };
 
     return (
-            <tr className='product_cart' key={id}>
+            <tr className='product_cart' key={id}>             
                 <td>
                     <img src={img} className="img_cart" alt='imgeror'></img>
                 </td>
