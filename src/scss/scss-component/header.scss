@@ -9,7 +9,10 @@ $secondary-background-color: #f1f1f1;
     top: 0;
     z-index: 9999;
     background-color: $secondary-background-color;
-
+    .icon_cart
+    {
+        position: relative;
+    }
     &_leng
     {
         width: 20px;
@@ -17,12 +20,12 @@ $secondary-background-color: #f1f1f1;
         font-size: 16px;
         z-index: 99;
         position: absolute;
-        top: 1px;
-        right: 240px;
+        top: -12px;
+        right: -12px;
         font-weight: 500;
         background-color:$pink;
         border-radius: 50%;
-        padding: 1px 6px;
+        padding: 0 6px;
         color: #f1f1f1;
     }
 
@@ -34,32 +37,26 @@ $secondary-background-color: #f1f1f1;
     &_icons
     {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         gap: 20px;
         font-size: 20px;
         cursor: pointer;
     }
 }
-.icon_cart
-{
-    position: relative;
-}
+
 nav 
 {
    ul
    {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:15px;
-
-
+        display: flex;
+        gap:15px;
     li
     {
         font-size: 16px;
         font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
         cursor: pointer;
 
         &:hover
@@ -69,7 +66,9 @@ nav
         &::after
         {
             display: block;
+            position: absolute;
             content: "";
+            bottom: -8px;
             width: 0;
             height: 2px;
             background-color: $pink;
@@ -141,12 +140,4 @@ nav
         font-size: 14px;
     }
 
-    .header
-    {
-        &_leng
-        {
-            right: 92px;
-        }
-        
-    }
 }

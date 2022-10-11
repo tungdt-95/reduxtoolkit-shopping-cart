@@ -14,7 +14,7 @@ const Contact = () => {
                     <p>42 Ba Cu, Phường 1, Thành phố Vũng Tàu, Bà Rịa - Vũng Tàu</p>
                 </div>
                 <div>
-                    <h2 className='contact_title'>LIÊN HỆT VỚI CÔNG TY</h2>
+                    <h2 className='contact_title'>LIÊN HỆ VỚI CÔNG TY</h2>
                     <h4>Email</h4>
                     <p>mrsimplestyle@gmail.com</p>
                     <h4>Liên kết mạng xã hội</h4>

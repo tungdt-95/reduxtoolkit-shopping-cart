@@ -79,13 +79,13 @@ const CartItems = (props) => {
                     <button onClick={decrementCartItems} className="cart-actions">
                         -
                     </button>
-                    {quantity}
+                    <label className='quantity'>{quantity}</label>
                     <button onClick={incrementCartItem} className="cart-actions">
                         +
                     </button>
                 </td>
-                <td>{price}</td>
-                <td>{totalprice}</td>
+                <td>{price}$</td>
+                <td>{totalprice}$</td>
                 <td onClick={decrementCartItems} style={{ cursor: "pointer" }}>X</td>
             </tr>
 

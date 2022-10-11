@@ -10,7 +10,7 @@ const Header = () => {
     const [menu, setmenu] = useState(false);
     return (
         <header className='header'>
-            <div className='grid'>
+            <div className='grid wide'>
                 <div className='row'>
                     <div className='col l-4'>
                         <div className='menu_moblie'>
@@ -39,18 +39,19 @@ const Header = () => {
 
                     </div>
                     <div className='col l-4'>
-                        <Link to='./'><h1 className='header_logo'>MrsimpleShop</h1></Link>
+                        <Link to='./'><h2 className='header_logo'>MrsimpleShop</h2></Link>
                     </div>
                     <div className='col l-4'>
                         <div className='header_icons'>
-                            <span className='header_leng'>{quantity}</span>
-                            <Link to="/cart" className='icon_cart'>
-                                <FaShoppingCart />
-                            </Link>
+                            <div  className='icon_cart'>
+                                <Link to="/cart">
+                                    <FaShoppingCart />
+                                </Link>
+                                <span className='header_leng'>{quantity}</span>
+                            </div>
                             <FaSearch />
                             <FaUserGraduate />
                         </div>
-
                     </div>
                 </div>
 

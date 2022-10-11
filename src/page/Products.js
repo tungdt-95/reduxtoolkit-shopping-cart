@@ -228,7 +228,7 @@ export const productdata = [{
 const Products = () => {
     return (
         <div className='grid wide'>
-            <h1 className='product_title'>SẢN PHẨM HOT</h1>
+            <h1 className='product_title'>TẤT CẢ SẢN PHẨM</h1>
             <div className='row'>
                 {productdata.map((product, index) => (
                     <Product product={product} key={index}></Product>
